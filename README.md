@@ -1,6 +1,9 @@
 # Binary Trading AI Bot
 
-Project Ideas For GSSOC 2024 (Currently Under Review)
+Project Ideas For GSSOC 2024 (Selected)
+<!-- Image with button link -->
+[![Binary Trading AI Bot](./main.png)](https://repl.it/github/Ayushpanditmoto/Trading-Bot)
+
 
 ## Project Description:
 
@@ -39,7 +42,7 @@ To get started with the Binary Trading AI Bot project, follow these steps:
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/your-username/binary-trading-ai-bot.git
+   git clone https://github.com/Ayushpanditmoto/Trading-Bot.git
    ```
 
 2. Install the necessary dependencies:
