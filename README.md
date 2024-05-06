@@ -2,12 +2,18 @@
 
 Project Ideas For GSSOC 2024 (Selected)
 <!-- Image with button link -->
-[![Binary Trading AI Bot](./main.png)](https://repl.it/github/Ayushpanditmoto/Trading-Bot)
+[![Binary Trading AI Bot](./image/main.png)](https://panditrader.vercel.app/quotex)
+
+# Click the Button Below to test The model on Quotex Platform
+<!-- text link no images -->
+
+[![Binary Bot](./image/link.png)](https://panditrader.vercel.app/quotex)
 
 
 ## Project Description:
 
 Binary Trading AI Bot is a project idea aimed at developing an AI-powered bot for binary trading. The bot utilizes machine learning algorithms to predict the direction of the next candle (whether it will move up or down) with high accuracy. Additionally, the bot incorporates Natural Language Processing (NLP) techniques to analyze trading outcomes and user feedback, continuously learning and improving its predictive capabilities over time.
+
 
 ## Key Features:
 
