@@ -18,11 +18,13 @@ To download the dataset, you need to have a Kaggle account. If you don't have on
 
 1. Go to your [Kaggle account settings](https://www.kaggle.com/account).
 2. Scroll down to the API section and click on "Create New API Token". This will download a file named `kaggle.json` which contains your API credentials.
-3. Place the `kaggle.json` file in the same directory as your Python script.
+3. copy your username and key from the `kaggle.json` file it and paste it when prompted in the command line
 
 Next, follow these steps:
 
- python downloadDataset.py
+```
+python downloadDataset.py
+```
 
 
 This Python script will prompt you to enter your Kaggle username and key, and then download the dataset.
@@ -31,8 +33,8 @@ This Python script will prompt you to enter your Kaggle username and key, and th
 
 After downloading the dataset, you can use the following Python script to extract it:
 
-python dataset-extract.py
-
+```python dataset-extract.py
+```
 
 This script will extract the dataset files into the appropriate directory.
 
