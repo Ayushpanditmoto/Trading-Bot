@@ -2,13 +2,13 @@
 
 Project Ideas For GSSOC 2024 (Selected)
 <!-- Image with button link -->
-[![Binary Trading AI Bot](./image/main.png)](https://panditrader.vercel.app/quotex)
+[![Binary Trading AI Bot](./image/main_new.png)](https://panditrader.vercel.app/quotex)
 
 # Click the Button Below to test The model on Quotex Platform
 <!-- text link no images -->
-
-[![Binary Bot](./image/link.png)](https://panditrader.vercel.app/quotex)
-
+<a href="https://panditrader.vercel.app/quotex">
+   <img src="./image/link_new.png" width="1000" height="500">
+</a>
 
 ## Project Description:
 
@@ -65,7 +65,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Connect with Me:
+
+## Connect:
 
 This project is licensed under the [MIT License](LICENSE).
 
@@ -75,4 +76,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
+=======
 **Note:** This project idea is part of the GSSOC 2024 initiative and welcomes contributions from participants. Let's build a powerful binary trading AI bot together!
