@@ -10,6 +10,36 @@ Project Ideas For GSSOC 2024 (Selected)
    <img src="./image/link_new.png" width="1000" height="500">
 </a>
 
+
+
+## How to Download the Dataset
+
+To download the dataset, you need to have a Kaggle account. If you don't have one, you can sign up for free on [Kaggle](https://www.kaggle.com/).
+
+1. Go to your [Kaggle account settings](https://www.kaggle.com/account).
+2. Scroll down to the API section and click on "Create New API Token". This will download a file named `kaggle.json` which contains your API credentials.
+3. Place the `kaggle.json` file in the same directory as your Python script.
+
+Next, follow these steps:
+
+ python downloadDataset.py
+
+
+This Python script will prompt you to enter your Kaggle username and key, and then download the dataset.
+
+## How to Extract the Dataset
+
+After downloading the dataset, you can use the following Python script to extract it:
+
+python dataset-extract.py
+
+
+This script will extract the dataset files into the appropriate directory.
+
+
+
+
+
 ## Project Description:
 
 Binary Trading AI Bot is a project idea aimed at developing an AI-powered bot for binary trading. The bot utilizes machine learning algorithms to predict the direction of the next candle (whether it will move up or down) with high accuracy. Additionally, the bot incorporates Natural Language Processing (NLP) techniques to analyze trading outcomes and user feedback, continuously learning and improving its predictive capabilities over time.
