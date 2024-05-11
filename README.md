@@ -65,4 +65,14 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
+## Connect with Me:
+
+This project is licensed under the [MIT License](LICENSE).
+
+[![Telegram Link](./image/telegram-icon.svg)]
+
+[![SignUp Link](./image/signup.png)] (https://panditrader.vercel.app/quotex)
+
+---
+
 **Note:** This project idea is part of the GSSOC 2024 initiative and welcomes contributions from participants. Let's build a powerful binary trading AI bot together!
