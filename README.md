@@ -6,8 +6,9 @@ Project Ideas For GSSOC 2024 (Selected)
 
 # Click the Button Below to test The model on Quotex Platform
 <!-- text link no images -->
-
-[![Binary Bot](./image/link.png)](https://panditrader.vercel.app/quotex)
+<a href="https://panditrader.vercel.app/quotex">
+   <img src="./image/link_new.png" width="1000" height="500">
+</a>
 
 
 ## Project Description:
