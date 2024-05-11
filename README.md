@@ -10,7 +10,6 @@ Project Ideas For GSSOC 2024 (Selected)
    <img src="./image/link_new.png" width="1000" height="500">
 </a>
 
-
 ## Project Description:
 
 Binary Trading AI Bot is a project idea aimed at developing an AI-powered bot for binary trading. The bot utilizes machine learning algorithms to predict the direction of the next candle (whether it will move up or down) with high accuracy. Additionally, the bot incorporates Natural Language Processing (NLP) techniques to analyze trading outcomes and user feedback, continuously learning and improving its predictive capabilities over time.
