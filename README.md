@@ -3,15 +3,15 @@
 <!-- Image with button link -->
 <!-- text link no images -->
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/main.png" width="1000" height="500">
+   <img src="./image/main.png" width="1000" height="400">
 </a>
 
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/case1.png" width="1000" height="500">
+   <img src="./image/case1.png" width="1600" height="900">
 </a>
 
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/case2.png" width="1000" height="500">
+   <img src="./image/case2.png" width="1600" height="900">
 </a>
 
 
