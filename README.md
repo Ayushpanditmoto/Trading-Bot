@@ -7,11 +7,11 @@
 </a>
 
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/case1.png" width="1600" height="900">
+   <img src="./image/case1.png" width="1000" height="400">
 </a>
 
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/case2.png" width="1600" height="900">
+   <img src="./image/case2.png" width="1000" height="400">
 </a>
 
 
