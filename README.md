@@ -50,27 +50,61 @@ Contributions to the Binary Trading AI Bot project are welcome and encouraged! H
 - **Testing:** Assist in testing the bot's functionality and providing feedback on its performance.
 - **Feedback:** Share your thoughts, suggestions, and ideas for improving the project by opening issues or participating in discussions.
 
-## Getting Started:
+##
+Key Features:
+
+1. Predictive Modeling: Utilize machine learning algorithms to forecast the direction of the next candle based on historical trading data.
+
+2. Real-time Data Integration: Incorporate real-time market data feeds to ensure the bot has access to the latest information for making informed trading decisions.
+
+3. NLP Feedback Loop: Analyze trading outcomes and user feedback using NLP techniques to adjust strategies based on sentiment analysis and reinforcement learning.
+
+4. User Interface: Design a user-friendly interface for traders, providing visualization of trading signals, performance metrics, and customizable settings.
+
+5. Risk Management: Implement robust risk management features including stop-loss levels and risk tolerance parameters to mitigate potential losses.
+
+6. Performance Monitoring: Enable comprehensive monitoring of the bot's performance through detailed analytics and reporting tools.
+
+7. Security and Compliance: Ensure data security and compliance with regulatory standards through encryption protocols and privacy protection measures.
+
+8. Continuous Improvement: Foster a culture of continuous improvement through regular updates and enhancements based on user feedback and market dynamics
+How to Contribute
+
+1. Code Contributions: Help develop new features, improve existing functionality, or fix bugs by submitting pull requests.
+   
+2. Documentation: Contribute to the project's documentation by writing README files, tutorials, or API documentation.
+   
+3. Testing: Assist in testing the bot's functionality and provide feedback on its performance.
+   
+4. Feedback: Share your thoughts, suggestions, and ideas for improving the project by opening issues or participating in discussions.
+
+-
+
+Getting Started:
 
 To get started with the Binary Trading AI Bot project, follow these steps:
 
 1. Clone the repository to your local machine:
-   ```
+   
    git clone https://github.com/Ayushpanditmoto/Trading-Bot.git
-   ```
+   
 
 2. Install the necessary dependencies:
-   ```
+  
    cd binary-trading-ai-bot
-   pip install -r requirements.txt
-   ```
+   pip install -r requirements.tx
 
 3. Start contributing by working on existing issues or proposing new features!
 
-## License:
 
-This project is licensed under the [MIT License](LICENSE).
+License:
+This project is licensed under the MIT License
 
----
+Code of Conduct:
 
-**Note:** This project idea is part of the GSSOC 2024 initiative and welcomes contributions from participants. Let's build a powerful binary trading AI bot together!
+We pledge to foster an open and welcoming environment for all contributors. Our Code of Conduct outlines our standards of behaviour and responsibilities. Please review it [here](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
+
+Attribution:
+This Code of Conduct is adapted from the Contributor Covenant, version 1.4.
+
+Note: This project idea is part of the GSSOC 2024 initiative and welcomes contributions from participants. Let's build a powerful binary trading AI bot together!.
