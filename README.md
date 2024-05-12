@@ -1,14 +1,22 @@
 # Binary Trading AI Bot
 
-Project Ideas For GSSOC 2024 (Selected)
 <!-- Image with button link -->
-[![Binary Trading AI Bot](./image/main_new.png)](https://panditrader.vercel.app/quotex)
-
-# Click the Button Below to test The model on Quotex Platform
 <!-- text link no images -->
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/link_new.png" width="1000" height="500">
+   <img src="./image/main.png" width="1000" height="400">
 </a>
+
+<a href="https://panditrader.vercel.app/quotex">
+   <img src="./image/case1.png" width="1000" height="400">
+</a>
+
+<a href="https://panditrader.vercel.app/quotex">
+   <img src="./image/case2.png" width="1000" height="400">
+</a>
+
+
+[![Binary Trading AI Bot](./image/main_new.png)](https://panditrader.vercel.app/quotex)
+
 
 ## Project Description:
 
