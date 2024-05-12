@@ -41,7 +41,7 @@ def signin():
         password.place_forget()
         signin_button.config(text="Logout", command=logout)
         signin_button.config(bg='#E75480', fg='black')
-        signin_button.place(x=70, y=340)  # Adjust button position
+        signin_button.place(x=70, y=340) 
     else:
         messagebox.showinfo("Oh no!", "Wrong Credentials")
 
@@ -49,7 +49,7 @@ def logout():
     global email, password, signin_button
     messagebox.showinfo("Logout", "Logged out")
     
-    # Remove the demo and real balance labels upon logout
+    
     for widget in frame.winfo_children():
         widget.destroy()
     
