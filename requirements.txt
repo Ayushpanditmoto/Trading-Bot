@@ -1,1 +1,29 @@
+# This is a requirements.txt file for the Binary Trading AI Bot project.
+# It lists all the Python dependencies required for the project to run.
+
+# General dependencies
+numpy==1.21.0          # Numerical computing library
+pandas==1.3.3          # Data manipulation library
+scikit-learn==0.24.2   # Machine learning library
+tensorflow==2.6.0      # Deep learning framework
+
+# Data visualization
+matplotlib==3.4.3      # Plotting library
+seaborn==0.11.2        # Statistical data visualization
+
+# Natural Language Processing (NLP)
+nltk==3.6.3            # NLP library
+spacy==3.1.3           # NLP library
+
+# Web scraping
+beautifulsoup4==4.10.0 # HTML parsing library
+requests==2.26.0       # HTTP library for making requests
+
+# API integration
+ccxt==1.58.71          # Cryptocurrency exchange library
+pytrends==4.7.3         # Google Trends API client
+
+# Miscellaneous
+flask==2.0.2           # Web framework
+gunicorn==20.1.0       # WSGI HTTP server for Flask
 
