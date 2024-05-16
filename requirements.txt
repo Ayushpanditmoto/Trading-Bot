@@ -27,3 +27,6 @@ pytrends==4.7.3         # Google Trends API client
 flask==2.0.2           # Web framework
 gunicorn==20.1.0       # WSGI HTTP server for Flask
 
+tkinter
+customtkinter
+pillow

@@ -1,2 +1,5 @@
 venv
 .quotexpy.log
+frontend/test.py
+frontend/compounding.py
+frontend/users.csv
