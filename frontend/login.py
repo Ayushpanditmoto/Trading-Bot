@@ -76,7 +76,17 @@ def validate_credentials(user_email, user_password):
     with open(csv_path, mode='r') as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[0] == user_email and row[1] == user_password:
+            if len(row) >= 2 and row[0] == user_email and row[1] == user_password:
+                return True
+    return False
+
+def check_email_exists(user_email):
+    if not os.path.isfile(csv_path):
+        return False
+    with open(csv_path, mode='r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if len(row) >= 1 and row[0] == user_email:
                 return True
     return False
 
@@ -107,22 +117,12 @@ def create_signup_widgets():
     switch_to_signin.bind("<Leave>", leave)
     switch_to_signin.place(x=70, y=300)
 
-def email_exists(user_email):
-    if not os.path.isfile(csv_path):
-        return False
-    with open(csv_path, mode='r') as file:
-        reader = csv.reader(file)
-        for row in reader:
-            if row[0] == user_email:
-                return True
-    return False
-
 def signup():
     user_email = signup_email.get()
     user_password = signup_password.get()
     if user_email == 'email' or user_password == 'password' or user_email == '' or user_password == '':
         messagebox.showinfo("Error", "Please enter valid email and password")
-    elif email_exists(user_email):
+    elif check_email_exists(user_email):
         messagebox.showinfo("Error", "Email already exists")
     else:
         with open(csv_path, mode='a', newline='') as file:
