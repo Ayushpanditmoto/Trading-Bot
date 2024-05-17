@@ -30,3 +30,4 @@ gunicorn==20.1.0       # WSGI HTTP server for Flask
 tkinter
 customtkinter
 pillow
+
