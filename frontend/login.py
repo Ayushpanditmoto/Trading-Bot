@@ -91,11 +91,11 @@ def show_real_balance_options():
         widget.place_forget()
 
     #Compounding button
-    compounding_button = ctk.CTkButton(frame, text="Compounding", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_compounding)
+    compounding_button = ctk.CTkButton(frame, text="Compounding", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_compounding_steps)
     compounding_button.place(relx=0.5, rely=0.4, anchor='center')
 
     #Martingale button
-    martingale_button = ctk.CTkButton(frame, text="Martingale", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_martingale)
+    martingale_button = ctk.CTkButton(frame, text="Martingale", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_martingale_steps)
     martingale_button.place(relx=0.5, rely=0.6, anchor='center')
 
     #Added back button
@@ -107,22 +107,167 @@ def show_demo_balance_options():
         widget.place_forget()
 
     #Compounding button
-    compounding_button = ctk.CTkButton(frame, text="Compounding", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_compounding)
+    compounding_button = ctk.CTkButton(frame, text="Compounding", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_compounding_steps)
     compounding_button.place(relx=0.5, rely=0.4, anchor='center')
 
     #Martingale button
-    martingale_button = ctk.CTkButton(frame, text="Martingale", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_martingale)
+    martingale_button = ctk.CTkButton(frame, text="Martingale", fg_color="#555", text_color="white", font=('Arial', 14), width=250, height=50, command=show_martingale_steps)
     martingale_button.place(relx=0.5, rely=0.6, anchor='center')
 
     #Added back button
     back_button = ctk.CTkButton(frame, text="Back", fg_color="#E75480", text_color="white", font=('Arial', 14), width=252, command=signin)
     back_button.place(relx=0.5, rely=0.85, anchor='center')
 
+# Accept compounding valuesss
+def show_compounding_steps():
+    for widget in frame.winfo_children():
+        widget.place_forget()
+
+    step_label = ctk.CTkLabel(frame, text='No. of Compounding Steps:', text_color='white', fg_color='#333', font=('Arial', 14))
+    step_label.place(relx=0.5, rely=0.3, anchor='center')
+
+    global step_entry
+    step_entry = ctk.CTkEntry(frame, width=100, text_color='white', font=('Arial', 14))
+    step_entry.place(relx=0.5, rely=0.4, anchor='center')
+
+    next_button = ctk.CTkButton(frame, text="Next", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=collect_compounding_steps)
+    next_button.place(relx=0.5, rely=0.5, anchor='center')
+
+    back_button = ctk.CTkButton(frame, text="Back", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=show_real_balance_options)
+    back_button.place(relx=0.5, rely=0.6, anchor='center')
+
+def collect_compounding_steps():
+    try:
+        num_steps = int(step_entry.get())
+        if num_steps <= 0:
+            raise ValueError("Number of steps must be a positive integer.")
+
+        for widget in frame.winfo_children():
+            widget.place_forget()
+
+        step_entries = []
+        for i in range(num_steps):
+            label = ctk.CTkLabel(frame, text=f'Step {i+1} Value:', text_color='white', fg_color='#333', font=('Arial', 14))
+            label.place(x=50, y=50 + i*40)
+
+            entry = ctk.CTkEntry(frame, width=100, height=20, text_color='white', font=('Arial', 14))
+            entry.place(x=150, y=53 + i*40)
+            step_entries.append(entry)
+
+        submit_button = ctk.CTkButton(frame, text="Submit", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=lambda: get_target_values(step_entries)) #command=lambda: submit_compounding_steps(step_entries)
+        submit_button.place(relx=0.5, rely=0.75, anchor='center')
+
+        #Added back button
+        back_button = ctk.CTkButton(frame, text="Back", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=show_compounding_steps)
+        back_button.place(relx=0.5, rely=0.85, anchor='center')
+
+    except ValueError:
+        messagebox.showinfo("Error", "Please enter a valid positive integer for the number of steps.")
+
+# def submit_compounding_steps(step_entries):
+#     try:
+#         steps_values = [int(entry.get()) for entry in step_entries]
+#         # Here you can handle the steps_values as needed, for now, we just show a messagebox
+#         messagebox.showinfo("Steps Submitted", f"Steps values: {steps_values}")
+#     except ValueError:
+#         messagebox.showinfo("Error", "Please enter valid integer values for all steps.")
+
+
+#Accept martingale valuess
+def show_martingale_steps():
+    for widget in frame.winfo_children():
+        widget.place_forget()
+
+    step_label = ctk.CTkLabel(frame, text='No. of Martingale Steps:', text_color='white', fg_color='#333', font=('Arial', 14))
+    step_label.place(relx=0.5, rely=0.3, anchor='center')
+
+    global step_entry
+    step_entry = ctk.CTkEntry(frame, width=100, text_color='white', font=('Arial', 14))
+    step_entry.place(relx=0.5, rely=0.4, anchor='center')
+
+    next_button = ctk.CTkButton(frame, text="Next", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=collect_martingale_steps)
+    next_button.place(relx=0.5, rely=0.5, anchor='center')
+
+    back_button = ctk.CTkButton(frame, text="Back", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=show_real_balance_options)
+    back_button.place(relx=0.5, rely=0.6, anchor='center')
+
+def collect_martingale_steps():
+    try:
+        num_steps = int(step_entry.get())
+        if num_steps <= 0:
+            raise ValueError("Number of steps must be a positive integer.")
+
+        for widget in frame.winfo_children():
+            widget.place_forget()
+
+        step_entries = []
+        for i in range(num_steps):
+            label = ctk.CTkLabel(frame, text=f'Step {i+1} Value:', text_color='white', fg_color='#333', font=('Arial', 14))
+            label.place(x=50, y=50 + i*40)
+
+            entry = ctk.CTkEntry(frame, width=100, height=20, text_color='white', font=('Arial', 14))
+            entry.place(x=150, y=53 + i*40)
+            step_entries.append(entry)
+
+        submit_button = ctk.CTkButton(frame, text="Submit", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=lambda: get_target_values(step_entries)) #command=lambda: submit_martingale_steps(step_entries)
+        submit_button.place(relx=0.5, rely=0.75, anchor='center')
+
+        #Added back button
+        back_button = ctk.CTkButton(frame, text="Back", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=show_martingale_steps)
+        back_button.place(relx=0.5, rely=0.85, anchor='center')
+
+    except ValueError:
+        messagebox.showinfo("Error", "Please enter a valid positive integer for the number of steps.")
+
+# def submit_martingale_steps(step_entries):
+#     try:
+#         steps_values = [int(entry.get()) for entry in step_entries]
+#         # Here you can handle the steps_values as needed, for now, we just show a messagebox
+#         messagebox.showinfo("Steps Submitted", f"Steps values: {steps_values}")
+#     except ValueError:
+#         messagebox.showinfo("Error", "Please enter valid integer values for all steps.")
+
+
+# ========================= ENDS HERE ==========================================
+
 def show_compounding():
     messagebox.showinfo("Info", "Compounding selected")
 
 def show_martingale():
     messagebox.showinfo("Info", "Martingale selected")
+# -------------------------------------------------------------------------
+def get_target_values(step_entries):
+    try: 
+        steps_values = [int(entry.get()) for entry in step_entries] # make use of these later on when setting up strategies
+
+        for widget in frame.winfo_children():
+            widget.place_forget()
+
+        target_values = []
+        label = ctk.CTkLabel(frame, text=f'Enter Profit target:', text_color='white', fg_color='#333', font=('Arial', 14))
+        label.place(x=50, y=50)
+
+        label = ctk.CTkLabel(frame, text=f'Enter Loss target:', text_color='white', fg_color='#333', font=('Arial', 14))
+        label.place(x=50, y=50 + 40)
+        
+        for i in range(2):
+            entry = ctk.CTkEntry(frame, width=100, height=20, text_color='white', font=('Arial', 14))
+            entry.place(x=180, y=53 + i*40)
+            target_values.append(entry)
+
+        next_button = ctk.CTkButton(frame, text="Next", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=lambda: show_strategies(steps_values, target_values))
+        next_button.place(relx=0.5, rely=0.5, anchor='center')
+
+        back_button = ctk.CTkButton(frame, text="Abort", fg_color="#E75480", text_color="white", font=('Arial', 14), width=100, command=signin)
+        back_button.place(relx=0.5, rely=0.6, anchor='center')
+    except ValueError:
+        messagebox.showinfo("Error", "Please enter valid integer values for all steps.")
+
+def show_strategies(step_values, target_values):
+    # make use of step_values and target_values.
+    # target_values[0] = profit target
+    # target_values[1] = loss target
+    messagebox.showinfo("Alert", "Baadme aana munna, abhi its under construction")
 
 #main window
 root = ctk.CTk()
