@@ -1,1 +1,5 @@
+#Here are the requirements for the test2.py
 
+pandas
+numpy
+scikit-learn
