@@ -1,0 +1,4 @@
+lumibot==1.0.7
+alpaca-trade-api==1.2.3
+transformers==4.10.2
+torch==1.9.1
