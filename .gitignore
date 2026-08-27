@@ -1,3 +1,22 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# existing repo ignores
 venv
 .quotexpy.log
 frontend/test.py
