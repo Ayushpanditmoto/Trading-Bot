@@ -5,7 +5,7 @@
 <!-- Image with button link -->
 <!-- text link no images -->
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/trade.png" width="1000" height="400">
+   <img src="./image/Trade.png" width="1000" height="400">
 </a>
 <a href="https://panditrader.vercel.app/quotex">
    <img src="./image/trade2.png" width="1000" height="400">
