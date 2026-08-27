@@ -28,6 +28,7 @@ export const SECTION_IDS = {
   features: "features",
   howItWorks: "how-it-works",
   aiTechnology: "ai-technology",
+  tradeExamples: "trade-examples",
   showcase: "showcase",
   access: "access",
   faq: "faq",

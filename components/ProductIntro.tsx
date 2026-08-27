@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import AIAnalysisVisual from "@/components/mockups/AIAnalysisVisual";
 import { SECTION_IDS } from "@/lib/constants";
+import mainNew from "@/image/main_new.png";
 
 export default function ProductIntro() {
   return (
@@ -19,9 +20,18 @@ export default function ProductIntro() {
         />
 
         <Reveal delay={150}>
-          <VisualWrap>
-            <AIAnalysisVisual />
-          </VisualWrap>
+          <Frame>
+            <Image
+              src={mainNew}
+              alt="Trading Bot platform preview"
+              width={1366}
+              height={768}
+              priority
+              placeholder="blur"
+              sizes="(min-width: 1180px) 1100px, 100vw"
+              style={{ width: "100%", height: "auto", display: "block" }}
+            />
+          </Frame>
         </Reveal>
       </Container>
     </Section>
@@ -38,6 +48,22 @@ const Section = styled.section`
   }
 `;
 
-const VisualWrap = styled.div`
+const Frame = styled.div`
   margin-top: 56px;
+  position: relative;
+  border-radius: ${({ theme }) => theme.radius.lg};
+  overflow: hidden;
+  border: 1px solid ${({ theme }) => theme.colors.borderStrong};
+  box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.8),
+    0 24px 60px -30px rgba(139, 92, 246, 0.35);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+  }
 `;

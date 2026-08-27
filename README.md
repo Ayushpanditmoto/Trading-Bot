@@ -5,7 +5,10 @@
 <!-- Image with button link -->
 <!-- text link no images -->
 <a href="https://panditrader.vercel.app/quotex">
-   <img src="./image/main.png" width="1000" height="400">
+   <img src="./image/trade.png" width="1000" height="400">
+</a>
+<a href="https://panditrader.vercel.app/quotex">
+   <img src="./image/trade2.png" width="1000" height="400">
 </a>
 
 ## Project Description:
@@ -60,11 +63,13 @@ Contributions to the Binary Trading AI Bot project are welcome and encouraged! H
 To get started with the Binary Trading AI Bot project, follow these steps:
 
 1. Clone the repository to your local machine:
+
    ```
    git clone https://github.com/Ayushpanditmoto/Trading-Bot.git
    ```
 
 2. Install the necessary dependencies:
+
    ```
    cd binary-trading-ai-bot
    pip install -r requirements.txt
